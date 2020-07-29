@@ -1,0 +1,278 @@
+.hero {
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  line-height: 1;
+  animation-name: opacityAnimation;
+  animation-duration: 4s;
+}
+
+.info-panel {
+  max-width: 90%;
+}
+
+.title {
+  font-size: 1.5rem;
+  top: 1000px;
+  -webkit-animation: slideInTop 3s forwards;
+  -moz-animation: slideInTop 3s forwards;
+  animation: slideInTop 3s forwards;
+}
+
+.name {
+  font-size: 2rem;
+  color: crimson;
+  font-weight: bold;
+  left: 500px;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+
+.name-2 {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.description {
+  right: 500px;
+  -webkit-animation: slideInRight 2s forwards;
+  -moz-animation: slideInRight 2s forwards;
+  animation: slideInRight 2s forwards;
+  font-size: 1rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  border: 3px crimson solid;
+  background: none;
+  color: crimson;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Poppins", sans-serif;
+  padding: 1em 1.5em;
+  letter-spacing: 0.05rem;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .title {
+    font-size: 2.275rem;
+  }
+  .name {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+  }
+  .name-2 {
+    font-size: 3rem;
+    color: crimson;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1.05rem;
+  }
+  .btn {
+    margin-top: 1.25rem;
+    border: 4px crimson solid;
+    background: none;
+    color: crimson;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Poppins", sans-serif;
+    padding: 1em 1.5em;
+    letter-spacing: 0.05rem;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .title {
+    font-size: 2.85rem;
+  }
+  .name {
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+  }
+  .name-2 {
+    font-size: 4rem;
+    color: crimson;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  .btn {
+    margin-top: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .name {
+    font-size: 5rem;
+    color: black;
+    font-weight: bold;
+  }
+  .name-2 {
+    font-size: 5rem;
+    color: crimson;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+  .btn {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .title {
+    font-size: 2.55rem;
+  }
+  .name {
+    font-size: 5.5rem;
+    color: black;
+    font-weight: bold;
+  }
+  .name-2 {
+    font-size: 5.5rem;
+    color: crimson;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1.55rem;
+  }
+  .btn {
+    margin-top: 1.75rem;
+    border: 4px crimson solid;
+    background: none;
+    color: crimson;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Poppins", sans-serif;
+    padding: 1em 1.5em;
+    letter-spacing: 0.05rem;
+  }
+}
+
+/* ANIMATIONS  */
+
+@-webkit-keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideInRight {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInTop {
+  0% {
+    transform: translateY(-900px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes slideInTop {
+  0% {
+    transform: translateY(-900px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-900px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
